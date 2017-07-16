@@ -40,7 +40,7 @@ document.querySelector('.btn-roll').addEventListener('click', function functionN
         // 2 Update Interface
         document.querySelector('#score-' + activePlayer).textContent = scores[activePlayer];
         // 3 Check if Player won the GAME
-        if (scores[activePlayer] >= 10) {
+        if (scores[activePlayer] >= 100) {
           document.querySelector('#name-' + activePlayer).textContent = 'Winner!';
           document.querySelector('.dice').style.display = 'none';
           document.querySelector('.player-' + activePlayer + '-panel').classList.add('winner');
